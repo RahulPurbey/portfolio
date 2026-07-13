@@ -1,47 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Logo Navbar Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Purbey | Portfolio</title>
 </head>
+
 <body>
 
     <header>
-        <table width="100%" cellpadding="10">
-            <tr>
-                <td width="120">
-                    <img src="logo.png" alt="Logo" width="90" height="90">
-                </td>
-
-                <td>
-                    <h2>My Portfolio</h2>
-                </td>
-
-                <td align="right">
-                    <nav>
-                        <a href="#">Home</a> |
-                        <a href="#">About</a> |
-                        <a href="#">Services</a> |
-                        <a href="#">Portfolio</a> |
-                        <a href="#">Contact</a>
-                    </nav>
-                    <br>
-                    <form>
-                        <input type="text" placeholder="Search here">
-                        <input type="submit" value="Search">
-                    </form>
-                </td>
-            </tr>
-        </table>
+        <h1>Rahul Purbey</h1>
+        <p>Computer Science Student | Web Developer</p>
     </header>
 
-    <hr>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#knowledge">Skills</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#reach">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <center>
-            <h1>Welcome to My Portfolio</h1>
-            
-        </center>
+
+        <section id="profile">
+            <h2>Profile</h2>
+
+            <img src="Images/profile.png" alt="Rahul Purbey Profile Picture" width="200">
+
+            <p>
+                Hello! My name is Rahul Purbey. I am a Bachelor of Information
+                Technology (BIT) student with a passion for web development,
+                software engineering, and learning modern technologies.
+                I enjoy building practical projects that improve my programming
+                and problem-solving skills.
+            </p>
+        </section>
+
+        <section id="knowledge">
+            <h2>Technical Skills</h2>
+
+            <dl>
+                <dt>Programming</dt>
+                <dd>HTML5, CSS3, JavaScript, Python, Java</dd>
+
+                <dt>Database Systems</dt>
+                <dd>MySQL, SQLite</dd>
+
+                <dt>Development Tools</dt>
+                <dd>Visual Studio Code, Git, GitHub</dd>
+
+                <dt>Operating Systems</dt>
+                <dd>Windows 11, Ubuntu Linux</dd>
+            </dl>
+        </section>
+
+            <article>
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website created using semantic HTML5 to
+                    present my profile, technical skills, academic projects,
+                    and contact information.
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/rahulpurbey/portfolio">
+                        Personal Portfolio
+                    </a>
+                </p>
+            </article>
+
+        </section>
+
+        <section id="reach">
+            <h2>Get in Touch</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="comments">Message</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
     </main>
 
+    <footer>
+        <p>&copy; 2026 Rahul Purbey. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>
